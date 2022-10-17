@@ -8,6 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
+    "blips-and-chitz-feedback-api-sdk": "^1.0.2",
     "gatsby": "^4.24.4",
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
@@ -24,6 +25,8 @@
     "prismjs": "^1.29.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
+    "react-icons": "^4.6.0",
+    "stream": "^0.0.2",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75"
   },

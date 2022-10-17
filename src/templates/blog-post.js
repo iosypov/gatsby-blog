@@ -4,6 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import Seo from "../components/seo"
+import Like from "../components/like"
 
 const BlogPostTemplate = ({
   data: { previous, next, site, markdownRemark: post },
@@ -26,6 +27,7 @@ const BlogPostTemplate = ({
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
+        <Like page={location.pathname} />
         <hr />
         <footer>
           <Bio />
