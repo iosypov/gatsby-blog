@@ -1,4 +1,4 @@
-It's gatsby sample blog with (`Feedback API`)[https://www.npmjs.com/package/blips-and-chitz-feedback-api-sdk] integration.
+It's gatsby sample blog with [`Feedback API`](https://www.npmjs.com/package/blips-and-chitz-feedback-api-sdk) integration.
 
 In this sample, you can `Like` or `Dislike` blog article.
 
