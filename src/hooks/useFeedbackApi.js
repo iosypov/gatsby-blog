@@ -11,6 +11,7 @@ function useFeedbackApi() {
     publicController.createFeedback({
       sentiment,
       page,
+      tags: ["sample-blog"]
     })
   }
   return { create }
