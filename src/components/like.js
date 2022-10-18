@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 
 import { BiLike, BiDislike } from "react-icons/bi"
 
@@ -6,9 +6,7 @@ import useFeedbackApi from "../hooks/useFeedbackApi"
 
 const Like = ({ page }) => {
   const feedbackApi = useFeedbackApi()
-  const [likeState, setLikeState] = useState(
-    JSON.parse(localStorage.getItem(`${page}_like`))
-  )
+  const [likeState, setLikeState] = useState(null)
   const handleLikeClick = React.useCallback(
     like => {
       setLikeState(like)
@@ -17,6 +15,9 @@ const Like = ({ page }) => {
     },
     [feedbackApi, page]
   )
+  useEffect(() => {
+    setLikeState(localStorage.getItem(`${page}_like`))
+  }, [page])
   return (
     <div style={{ display: "flex", flexDirection: "row", fontSize: "20px" }}>
       <div
