@@ -8,7 +8,7 @@
     "url": "https://github.com/gatsbyjs/gatsby/issues"
   },
   "dependencies": {
-    "blips-and-chitz-feedback-api-sdk": "^1.0.3",
+    "blips-and-chitz-feedback-api-sdk": "^1.0.5",
     "gatsby": "^4.24.4",
     "gatsby-plugin-feed": "^4.24.0",
     "gatsby-plugin-image": "^2.24.0",
@@ -31,6 +31,7 @@
     "typeface-montserrat": "0.0.75"
   },
   "devDependencies": {
+    "dotenv": "^16.0.3",
     "prettier": "^2.7.1"
   },
   "homepage": "https://github.com/gatsbyjs/gatsby-starter-blog#readme",
