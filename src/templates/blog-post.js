@@ -65,10 +65,13 @@ const BlogPostTemplate = ({
 
 export const Head = ({ data: { markdownRemark: post } }) => {
   return (
-    <Seo
-      title={post.frontmatter.title}
-      description={post.frontmatter.description || post.excerpt}
-    />
+    <>
+      <Seo
+        title={post.frontmatter.title}
+        description={post.frontmatter.description || post.excerpt}
+      />
+      <meta property="og:image" content="/og-blog.png" />
+    </>
   )
 }
 
